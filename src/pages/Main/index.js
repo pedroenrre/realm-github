@@ -37,6 +37,7 @@ const Main = () => {
       description: repository.description,
       stars: repository.stargazers_count,
       forks: repository.forks_count,
+      owner: repository.owner.login,
     };
 
     const realm = await getRealm();

@@ -8,6 +8,7 @@ const Repository = ({ data, onRefresh }) => {
   return (
     <View style={styles.Container}>
       <Text style={styles.Name}>{data.name}</Text>
+      <Text style={styles.Name}>{data.owner}</Text>
       <Text numberOfLines={2} style={styles.Description}>
         {data.description}
       </Text>
